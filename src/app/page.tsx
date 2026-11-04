@@ -74,13 +74,13 @@ const impactStats = [
 const caseStudies = [
   {
     tag: 'Fundraising',
-    title: 'Water for All',
+    title: 'Mir Hope Foundation',
     country: 'Kenya',
-    metric: '+212%',
-    metricLabel: 'online donations',
-    href: '/work/water-for-all-flow',
-    image: '/images/water-for-all.avif',
-    imageAlt: 'Clean water flowing from a tap in a rural African community',
+    metric: '90%',
+    metricLabel: 'donations reach direct impact',
+    href: 'https://mirhopefoundation.com',
+    image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80',
+    imageAlt: 'Healthcare workers supporting a community in Kenya',
   },
   {
     tag: 'Content',
@@ -168,17 +168,17 @@ export default function HomePage() {
         <div className="absolute inset-0 texture-dots opacity-60 pointer-events-none" />
         {/* gold radial glow top-right */}
         <div className="absolute -top-32 -right-32 w-[480px] h-[480px] bg-gold/40 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-14 pb-10 grid lg:grid-cols-2 gap-10 items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-20 pb-14 grid lg:grid-cols-2 gap-12 items-center relative">
 
           {/* Left */}
-          <div>
+          <div className="min-w-0">
             <div>
               <span className="inline-flex items-center gap-2 text-xs font-extrabold tracking-[0.18em] uppercase bg-ink text-cream px-4 py-2 rounded-full">
                 <Sparkles className="w-3.5 h-3.5 text-lime" aria-hidden="true" />
                 NGO Marketing Agency · Africa
               </span>
             </div>
-            <h1 className="font-display text-[44px] sm:text-6xl lg:text-[72px] leading-[1.04] mt-6">
+            <h1 className="font-display font-semibold text-[44px] sm:text-6xl lg:text-[69px] leading-[1.04] mt-6">
               Digital marketing that moves{' '}
               <span className="italic text-coral">missions&nbsp;forward.</span>
             </h1>
@@ -220,14 +220,14 @@ export default function HomePage() {
           </div>
 
           {/* Right: image + floating cards */}
-          <div className="relative">
+          <div className="relative lg:pl-4">
             <div className="rounded-[28px] overflow-hidden border-2 border-ink shadow-[8px_8px_0_0_#034636] rotate-1">
               <Image
                 src="/images/hero-community.jpg"
                 alt="African community volunteers celebrating a fundraising campaign"
-                width={640}
+                width={560}
                 height={520}
-                className="w-full h-[360px] sm:h-[460px] object-cover"
+                className="w-full h-[420px] sm:h-[520px] object-cover"
                 priority
               />
             </div>
@@ -350,10 +350,14 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {caseStudies.map((cs) => (
+            {caseStudies.map((cs) => {
+              const isExternal = cs.href.startsWith('http');
+              return (
               <Link
                 key={cs.title}
                 href={cs.href}
+                target={isExternal ? '_blank' : undefined}
+                rel={isExternal ? 'noreferrer' : undefined}
                 className="group block rounded-3xl border-2 border-ink/10 bg-white overflow-hidden hover:border-ink hover:shadow-[4px_4px_0_0_#034636] transition-all"
               >
                 <div className="relative h-48 overflow-hidden">
@@ -380,7 +384,8 @@ export default function HomePage() {
                   </span>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
