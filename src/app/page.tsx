@@ -168,7 +168,7 @@ export default function HomePage() {
         <div className="absolute inset-0 texture-dots opacity-60 pointer-events-none" />
         {/* gold radial glow top-right */}
         <div className="absolute -top-32 -right-32 w-[480px] h-[480px] bg-gold/40 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-20 pb-14 grid lg:grid-cols-2 gap-12 items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-14 pb-10 grid lg:grid-cols-2 gap-10 items-center relative">
 
           {/* Left */}
           <div>
@@ -182,12 +182,12 @@ export default function HomePage() {
               Digital marketing that moves{' '}
               <span className="italic text-coral">missions&nbsp;forward.</span>
             </h1>
-            <p className="text-lg text-ink/65 leading-relaxed mt-6 max-w-xl">
+            <p className="text-base text-ink/65 leading-relaxed mt-4 max-w-xl">
               Humanix is the marketing agency built exclusively for African NGOs and nonprofits. We
               turn bold missions into funded movements - through fundraising campaigns, content and
               digital that donors cannot ignore.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mt-8">
+            <div className="flex flex-col sm:flex-row gap-3 mt-6">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-ink text-cream font-extrabold border-2 border-ink shadow-[4px_4px_0_0_#DBA444] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all"
@@ -202,7 +202,7 @@ export default function HomePage() {
               </Link>
             </div>
             {/* Stats row */}
-            <div className="flex flex-wrap gap-x-8 gap-y-3 mt-10">
+            <div className="flex flex-wrap gap-x-8 gap-y-3 mt-6">
               {[
                 { val: '120+', label: 'campaigns launched' },
                 { val: '$48M', label: 'raised for partners' },
@@ -227,7 +227,7 @@ export default function HomePage() {
                 alt="African community volunteers celebrating a fundraising campaign"
                 width={640}
                 height={520}
-                className="w-full h-[420px] sm:h-[520px] object-cover"
+                className="w-full h-[360px] sm:h-[460px] object-cover"
                 priority
               />
             </div>
@@ -237,8 +237,8 @@ export default function HomePage() {
                 <TrendingUp className="w-6 h-6 text-white" aria-hidden="true" />
               </span>
               <div>
-                <p className="font-display text-xl leading-none">+212%</p>
-                <p className="text-xs font-bold text-ink/55 mt-1">online donations</p>
+                <p className="font-display text-xl leading-none text-coral">+212%</p>
+                <p className="text-xs font-bold text-coral mt-1">online donations</p>
               </div>
             </div>
             {/* Floating: case study */}

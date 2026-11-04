@@ -51,7 +51,7 @@ export default function Logo({ variant = 'light' }: { variant?: 'light' | 'dark'
           humanix<span className="text-coral not-italic">.</span>
         </span>
         <span className="mt-1 flex items-center gap-1.5">
-          <span className="h-[3px] w-4 shrink-0 rounded-full bg-lime" />
+          <span className="h-[3px] w-4 shrink-0 rounded-full bg-gold" />
           <span className={`block text-[10px] font-bold tracking-[0.22em] ${isDark ? 'text-cream/60' : 'text-ink/55'}`}>
             NGO MARKETING AGENCY
           </span>
