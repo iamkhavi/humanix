@@ -168,7 +168,7 @@ export default function HomePage() {
         <div className="absolute inset-0 texture-dots opacity-60 pointer-events-none" />
         {/* gold radial glow top-right */}
         <div className="absolute -top-32 -right-32 w-[480px] h-[480px] bg-gold/40 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-20 pb-14 grid lg:grid-cols-2 gap-12 items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-20 pb-14 grid lg:grid-cols-[55%_45%] gap-12 items-center relative">
 
           {/* Left */}
           <div className="min-w-0">
@@ -220,7 +220,7 @@ export default function HomePage() {
           </div>
 
           {/* Right: image + floating cards */}
-          <div className="relative lg:pl-4">
+          <div className="relative isolate">
             <div className="rounded-[28px] overflow-hidden border-2 border-ink shadow-[8px_8px_0_0_#034636] rotate-1">
               <Image
                 src="/images/hero-community.jpg"
