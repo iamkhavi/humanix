@@ -3,32 +3,42 @@
 @theme {
   --color-ink: #034636;
   --color-cream: #FAF7F0;
-  --color-lime: #C8F04A;
+  --color-lime: #AADF2E;
   --color-coral: #E86A3A;
   --color-gold: #DBA444;
+  --color-sand: #F0EBE1;
+  --color-coal: #012b21;
   --color-white: #ffffff;
   --font-display: var(--font-fraunces);
   --font-sans: var(--font-instrument-sans);
   --container-7xl: 80rem;
-  --animate-marquee: marquee 30s linear infinite;
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
 }
 
-.texture-dots {
-  background-image: radial-gradient(circle, #034636 1px, transparent 1px);
-  background-size: 20px 20px;
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
 
+/* Dot texture (dark dots on cream bg) */
+.texture-dots {
+  background-image: radial-gradient(circle, rgba(3, 70, 54, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Dot texture (light dots on dark bg) */
+.texture-dots-light {
+  background-image: radial-gradient(circle, rgba(250,247,240,0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
 ::selection {
-  color: #034636;
-  background: #DBA444;
+  color: rgb(3, 70, 54);
+  background: rgb(219, 164, 68);
 }
 
 html {
@@ -36,8 +46,8 @@ html {
 }
 
 body {
-  color: #034636;
-  background-color: #FAF7F0;
+  color: rgb(3, 70, 54);
+  background-color: rgb(250, 247, 240);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-optical-sizing: auto;

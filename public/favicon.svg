@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Green rounded rect -->
+  <rect width="48" height="48" rx="14" fill="#034636"/>
+  <!-- "h" in Fraunces serif -->
+  <text
+    x="24"
+    y="33.5"
+    text-anchor="middle"
+    font-family="Fraunces, Georgia, serif"
+    font-weight="600"
+    font-size="24"
+    fill="#FAF7F0"
+  >h</text>
+  <!-- Gold arrow triangle -->
+  <path d="M31.5 15.5 L37 21 L31.5 26.5 Z" fill="#DBA444"/>
+</svg>

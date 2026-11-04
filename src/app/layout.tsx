@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: 'Humanix | NGO Marketing Agency Africa - Digital Marketing That Moves Missions Forward',
   description:
     "Humanix is Africa's NGO marketing agency. Digital marketing that moves missions forward - fundraising campaigns, content and donor growth for nonprofits.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
