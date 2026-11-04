@@ -98,15 +98,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* CTA banner */}
           <div className="bg-coal border-2 border-cream/15 rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row lg:items-center gap-8 justify-between relative overflow-hidden">
-            <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-lime/15 blur-2xl pointer-events-none" />
+            <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-gold/15 blur-2xl pointer-events-none" />
             <div>
-              <p className="text-xs font-extrabold tracking-[0.2em] text-lime uppercase">Ready when you are</p>
+              <p className="text-xs font-extrabold tracking-[0.2em] text-gold uppercase">Ready when you are</p>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl mt-3 leading-tight">Have a mission to move?</h2>
               <p className="text-cream/65 mt-3 max-w-xl">Tell us where you want your mission to go. We will map the fastest digital route to get there - and walk it with you.</p>
             </div>
             <Link
               href="/contact"
-              className="shrink-0 inline-flex items-center gap-2 px-7 py-4 rounded-full bg-lime text-ink font-extrabold border-2 border-lime hover:bg-cream hover:border-cream transition-colors"
+              className="shrink-0 inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gold text-ink font-extrabold border-2 border-gold hover:bg-cream hover:border-cream transition-colors"
             >
               Start a project <ArrowUpRight className="w-5 h-5" aria-hidden="true" />
             </Link>
