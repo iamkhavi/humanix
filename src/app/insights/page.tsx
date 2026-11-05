@@ -23,7 +23,7 @@ const featured = {
   categoryId: 'digital',
   title: 'Why African NGOs Need More Than Just a Website',
   summary: 'Having an online presence is only the beginning. Explore why visibility, trust, and supporter engagement require a full digital strategy — and how organisations across Africa are getting it right.',
-  readTime: '7 min read',
+  readTime: '6 min read',
   date: 'October 2026',
   href: '/insights/african-ngos-need-more-than-a-website',
   image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1400&q=85',
