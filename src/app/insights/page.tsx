@@ -103,19 +103,19 @@ const resources = [
     title: 'NGO Digital Visibility Checklist',
     description: '12-point checklist to audit and improve your organisation\'s online presence.',
     format: 'PDF · Free',
-    href: '#',
+    href: '/resources/ngo-digital-visibility-checklist',
   },
   {
     title: 'Fundraising Campaign Planning Template',
     description: 'A structured template to plan, execute, and measure digital fundraising campaigns.',
     format: 'Google Doc · Free',
-    href: '#',
+    href: '/resources/fundraising-campaign-planning-template',
   },
   {
     title: 'Impact Storytelling Framework',
     description: 'A step-by-step guide to turning project outcomes into donor-ready narratives.',
     format: 'PDF · Free',
-    href: '#',
+    href: '/resources/impact-storytelling-framework',
   },
 ];
 
