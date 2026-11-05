@@ -202,7 +202,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex gap-2.5 text-cream/75">
                   <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-lime" aria-hidden="true" />
-                  Riverside Drive, Nairobi, Kenya
+                  237 Garden City, Nairobi, Kenya, 00618
                 </li>
                 <li>
                   <a href="mailto:hello@humanix.africa" className="flex gap-2.5 text-cream/75 hover:text-lime">
@@ -211,9 +211,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+254205550134" className="flex gap-2.5 text-cream/75 hover:text-lime">
+                  <a href="tel:+254708122974" className="flex gap-2.5 text-cream/75 hover:text-lime">
                     <Phone className="w-4 h-4 mt-0.5 shrink-0 text-lime" aria-hidden="true" />
-                    +254 20 555 0134
+                    +254 708 122 974
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+40744621250" className="flex gap-2.5 text-cream/75 hover:text-lime">
+                    <Phone className="w-4 h-4 mt-0.5 shrink-0 text-lime" aria-hidden="true" />
+                    +40 744 621 250
                   </a>
                 </li>
               </ul>

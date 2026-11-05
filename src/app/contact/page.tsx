@@ -91,10 +91,11 @@ export default function ContactPage() {
             {/* Contact details */}
             <div className="flex flex-col gap-4 lg:pb-2">
               {[
-                { Icon: MapPin, label: 'Riverside Drive, Nairobi, Kenya', href: null },
+                { Icon: MapPin, label: '237 Garden City, Nairobi, Kenya, 00618', href: null },
                 { Icon: Mail, label: 'hello@humanix.africa', href: 'mailto:hello@humanix.africa' },
-                { Icon: Phone, label: '+254 20 555 0134', href: 'tel:+254205550134' },
-                { Icon: MessageCircle, label: 'WhatsApp available', href: 'https://wa.me/254205550134' },
+                { Icon: Phone, label: '+254 708 122 974', href: 'tel:+254708122974' },
+                { Icon: Phone, label: '+40 744 621 250', href: 'tel:+40744621250' },
+                { Icon: MessageCircle, label: 'WhatsApp: +254 708 122 974', href: 'https://wa.me/254708122974' },
               ].map(({ Icon, label, href }) => (
                 <div key={label} className="flex items-center gap-3">
                   <span className="w-10 h-10 grid place-items-center rounded-xl bg-gold/20 border border-gold/30 shrink-0">
@@ -119,7 +120,7 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-[1fr_380px] gap-14">
 
           {/* Form */}
-          <div>
+          <div id="contact-form">
             <span className="inline-flex items-center gap-2 text-xs font-extrabold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full border-2 border-ink/15 text-ink/70 bg-white/60">
               <span className="w-2 h-2 rounded-full bg-coral inline-block" />
               Send us a message
