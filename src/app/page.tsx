@@ -9,7 +9,6 @@ import {
   BadgeCheck,
   Sparkles,
   TrendingUp,
-  HeartHandshake,
   Search,
   Megaphone,
   Share2,
@@ -20,15 +19,27 @@ import {
 
 /* ─── data ──────────────────────────────────────────────────── */
 
-const partners = [
-  'Water for All',
-  'Bright Futures Trust',
-  'MamaCare Foundation',
-  'Green Belt Alliance',
-  'TechSprouts',
-  'Harvest Hope',
-  'Climate Voices Africa',
-  'Ujamaa Arts Collective',
+const marqueeServices = [
+  // Marketing
+  'Digital Marketing & Campaigns',
+  'Fundraising Marketing',
+  'Branding & Creative Design',
+  'Content & Impact Storytelling',
+  'Social Media Management',
+  'Strategic Communications & PR',
+  'Email Marketing',
+  'Marketing Analytics',
+  // Technology
+  'MEAL & Programme Performance',
+  'Field Operations',
+  'Data Management & Analytics',
+  'Workflow Automation',
+  'Connected Systems & Integrations',
+  'Fundraising & Resource Mobilisation',
+  'WhatsApp Operations',
+  'Organisational AI',
+  'Digital Platforms & Websites',
+  'Business Systems & ERP',
 ];
 
 const services = [
@@ -129,36 +140,34 @@ const processSteps = [
 
 const insightPosts = [
   {
-    tag: 'Fundraising',
-    title: 'Why African donors give differently — and what your campaign needs to reflect that',
+    tag: 'Digital Marketing',
+    title: 'Why African NGOs Need More Than Just a Website',
     readTime: '6 min read',
-    href: '/insights/african-donor-behaviour',
+    href: '/insights/african-ngos-need-more-than-a-website',
+    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80',
+    imageAlt: 'African NGO team collaborating on a digital campaign',
+  },
+  {
+    tag: 'Fundraising',
+    title: '5 Digital Fundraising Strategies African NGOs Can Use in 2027',
+    readTime: '7 min read',
+    href: '/insights/digital-fundraising-strategies-2027',
     image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80',
     imageAlt: 'African community members gathered at a fundraising event',
   },
   {
-    tag: 'Content',
-    title: 'The NGO storytelling framework that raised $2M for a Kenyan water charity',
-    readTime: '8 min read',
-    href: '/insights/ngo-storytelling-framework',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    tag: 'Storytelling',
+    title: 'How to Tell Impact Stories That Build Donor Confidence',
+    readTime: '7 min read',
+    href: '/insights/impact-stories-donor-confidence',
+    image: 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800&q=80',
     imageAlt: 'Person writing a story on a laptop at a desk',
-  },
-  {
-    tag: 'Digital',
-    title: 'Google Ad Grants: the underused $10,000/month tool every African NGO should claim',
-    readTime: '5 min read',
-    href: '/insights/google-ad-grants-africa',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    imageAlt: 'Digital marketing analytics on a laptop screen',
   },
 ];
 
 /* ─── component ─────────────────────────────────────────────── */
 
 export default function HomePage() {
-  const doubledPartners = [...partners, ...partners];
-
   return (
     <Layout>
 
@@ -261,13 +270,13 @@ export default function HomePage() {
       {/* ── 2. MARQUEE TICKER ───────────────────────────────── */}
       <div className="bg-ink text-cream py-5 overflow-hidden border-y-2 border-ink">
         <div className="flex w-max animate-marquee">
-          {doubledPartners.map((partner, i) => (
+          {[...marqueeServices, ...marqueeServices].map((service, i) => (
             <span
               key={i}
               className="flex items-center gap-3 px-6 font-display text-sm sm:text-base tracking-wide whitespace-nowrap"
             >
-              <HeartHandshake className="w-4 h-4 text-lime shrink-0" aria-hidden="true" />
-              {partner}
+              <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+              {service}
             </span>
           ))}
         </div>
