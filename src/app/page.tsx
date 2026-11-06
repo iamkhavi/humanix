@@ -232,7 +232,7 @@ export default function HomePage() {
           <div className="relative isolate">
             <div className="rounded-[28px] overflow-hidden border-2 border-ink shadow-[8px_8px_0_0_#034636] rotate-1">
               <Image
-                src="https://mirhopefoundation.com//uploads/1ac9d6933bcf5ca1cf8f725d.jpeg"
+                src="https://mirhopefoundation.com/uploads/1ac9d6933bcf5ca1cf8f725d.jpeg"
                 alt="African community volunteers celebrating a fundraising campaign"
                 width={560}
                 height={520}
