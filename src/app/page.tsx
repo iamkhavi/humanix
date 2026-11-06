@@ -223,7 +223,7 @@ export default function HomePage() {
           <div className="relative isolate">
             <div className="rounded-[28px] overflow-hidden border-2 border-ink shadow-[8px_8px_0_0_#034636] rotate-1">
               <Image
-                src="/images/hero-community.jpg"
+                src="https://mirhopefoundation.com//uploads/1ac9d6933bcf5ca1cf8f725d.jpeg"
                 alt="African community volunteers celebrating a fundraising campaign"
                 width={560}
                 height={520}
@@ -244,12 +244,14 @@ export default function HomePage() {
             {/* Floating: case study */}
             <div className="absolute -right-2 sm:-right-6 bottom-10 bg-ink text-cream rounded-2xl border-2 border-ink shadow-[4px_4px_0_0_#DBA444] px-5 py-4">
               <p className="text-xs font-bold text-lime tracking-wide uppercase">Featured case study</p>
-              <p className="font-display text-base mt-1">Water for All · Kenya</p>
+              <p className="font-display text-base mt-1">Mir Hope Foundation · Kenya</p>
               <Link
-                href="/work/water-for-all-flow"
+                href="https://mirhopefoundation.com"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-1 text-sm font-bold text-cream/80 hover:text-lime mt-1"
               >
-                View results <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+                View website <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
