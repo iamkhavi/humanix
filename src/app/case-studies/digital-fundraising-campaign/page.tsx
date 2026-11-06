@@ -15,7 +15,7 @@ export default function Page() {
       category="Fundraising & Digital Campaigns"
       title="Connecting Community Causes With Supporters"
       subtitle="How a structured digital campaign turns community needs into clear fundraising opportunities — with campaign strategy, donor engagement, and measurable outcomes."
-      heroImage="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&q=85"
+      heroImage="https://mirhopefoundation.com/uploads/18542e213590e51253fb4917.jpeg"
       heroImageAlt="African community members gathered at a fundraising event"
       meta={[
         { label: 'Organisation', value: 'Mir Hope Foundation' },
